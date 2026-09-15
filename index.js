@@ -26,6 +26,8 @@ app.get("/search", (req, res) => {
 app.get("*unknownPage", (req, res) => {
   res.send("this is a 404 path");
 });
+app.post("/", (req, res) => {
+});
 
 app.listen(port, () => {
   console.log(`app listening on port  ${port}`);
